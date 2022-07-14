@@ -32,9 +32,6 @@ module.exports = {
             loader: 'style-loader',
           },
           {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
             loader: 'css-loader',
           },
         ],
@@ -42,7 +39,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html'),
       minify: false,
